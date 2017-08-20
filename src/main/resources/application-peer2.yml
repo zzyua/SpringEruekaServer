@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: erueka-server
+server:
+  port: 8080
+eureka:
+  instance:
+    hostname: peer2
+  client:
+#该应用为注册中心，false代表不向注册中心注册中心注册自己
+#    register-with-eureka: false
+#关闭检索服务功能，原因是 注册中心的职责就是维护服务实例
+#    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://peer1:1111/eureka/
