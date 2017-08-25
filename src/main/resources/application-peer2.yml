@@ -12,3 +12,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:1111/eureka/
+    healthcheck:
+      enable: true  
